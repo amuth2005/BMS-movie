@@ -1,0 +1,235 @@
+/* Base styles */
+body {
+    font-family: sans-serif;
+    background-color: #181818;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Step container styles */
+.step-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.step {
+    padding: 10px 15px;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.step.active {
+    border-bottom: 2px solid #007bff;
+}
+
+/* Step content styles */
+.step-content {
+    display: none;
+}
+
+.step-content.active {
+    display: block;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007bff;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    pointer-events: none; 
+}
+
+/* Date, Movie, and Cinema button styles */
+.date-buttons button,
+.movie-buttons button,
+.cinema-buttons button {
+    margin-right: 5px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+/* Active button styles */
+.date-buttons .active,
+.movie-buttons .active,
+.cinema-buttons .active,
+.time-button .active
+{
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Seat selection styles */
+#screen {
+    width: 80%;
+    height: 30px;
+    background-color: #444;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.row-label {
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.seat {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.seat:hover {
+    background-color: #555;
+}
+
+.seat.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.seat.occupied {
+    background-color: #dc3545;
+    cursor: not-allowed;
+}
+
+#seats {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Summary section */
+.booking-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.booking-summary h2 {
+    margin-bottom: 10px;
+}
+
+.booking-summary p {
+    margin: 5px 0;
+}
+
+/* ... (Your existing CSS styles) ... */
+
+.grid {
+    grid-template-columns: 1fr 1fr; 
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+/* ... (Your existing CSS styles) ... */
+
+.seat-row {
+    display: flex;
+}
+
+.seat {
+    width: 30px;
+    height:30px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 5px; 
+    display: flex; /* Use flexbox for horizontal centering */
+    justify-content: center; 
+}
+
+.seat.selected {
+    background-color: #CC0100;
+    color: #fff;
+}
+
+.seat.occupied {
+    background-color: #ccc;
+    color: #fff;
+    cursor: default;
+}
+
+/* ... (Your existing CSS styles) ... */
+
+/* ... (Your existing CSS styles) ... */
+
+#screen {
+    width: 79%; 
+    height: 20px; 
+    background-color: #CC0100; 
+    margin-bottom: 10px; 
+    text-align: center; /* Center text horizontally */
+    line-height: 20px; /* Center text vertically */
+    color: #ffffff; /* White text color */
+}
+
+.time-buttons button,
+.date-buttons button,
+.movie-buttons button,
+.cinema-buttons button {
+    margin-right: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.time-button.active,
+.date-button.active,
+.movie-button.active,
+.cinema-button.active {
+    background-color: #007bff;
+}
+
+.time-button:hover,
+.date-button:hover,
+.movie-button:hover,
+.cinema-button:hover {
+    background-color: #444;
+}
